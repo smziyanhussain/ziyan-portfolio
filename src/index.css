@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+/* ---------- Design tokens ---------- */
+@theme {
+  /* Fonts */
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+
+  /* Colors (from the Phase 1 palette) */
+  --color-canvas: #070a13;          /* page background */
+  --color-surface: #0e1424;         /* cards, navbar */
+  --color-surface-2: #151c30;       /* hover states */
+  --color-line: #1f2840;            /* borders */
+  --color-ink: #e8ecf5;             /* main text */
+  --color-muted: #94a0b8;           /* secondary text */
+  --color-accent: #5b8cff;          /* blue */
+  --color-accent-2: #9b7bff;        /* purple */
+  --color-status-progress: #f5b544; /* "In Progress" badge */
+  --color-status-done: #4ade80;     /* "Completed" badge */
+}
+
+/* ---------- Base page styles ---------- */
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: color-mix(in oklab, var(--color-accent-2) 40%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
