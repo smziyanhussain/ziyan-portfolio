@@ -24,7 +24,7 @@ function Navbar() {
   const closeMenu = () => setIsOpen(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line/60 bg-canvas/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-line/60 bg-canvas/80 backdrop-blur-lg">
       <nav aria-label="Main" className="mx-auto max-w-6xl px-6">
         <div className="flex h-16 items-center justify-between">
           <a
@@ -40,12 +40,12 @@ function Navbar() {
           </a>
 
           {/* Desktop links */}
-          <ul className="hidden items-center gap-1 md:flex">
+          <ul className="hidden items-center gap-1 lg:flex">
             {navLinks.map((link) => (
               <li key={link.id}>
                 <a
                   href={`#${link.id}`}
-                  className="rounded-md px-3 py-2 text-sm text-muted transition-colors hover:text-ink"
+                  className="rounded-lg px-3 py-2 text-sm text-muted transition-colors hover:text-ink"
                 >
                   {link.label}
                 </a>
@@ -61,21 +61,21 @@ function Navbar() {
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             aria-label={isOpen ? 'Close menu' : 'Open menu'}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md text-ink transition-colors hover:bg-surface-2 md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-ink transition-colors hover:bg-surface-2 lg:hidden"
           >
             {isOpen ? <X aria-hidden="true" size={22} /> : <Menu aria-hidden="true" size={22} />}
           </button>
         </div>
 
         {/* Mobile links */}
-        <div id="mobile-menu" hidden={!isOpen} className="border-t border-line/60 py-3 md:hidden">
+        <div id="mobile-menu" hidden={!isOpen} className="border-t border-line/60 py-3 lg:hidden">
           <ul className="flex flex-col">
             {navLinks.map((link) => (
               <li key={link.id}>
                 <a
                   href={`#${link.id}`}
                   onClick={closeMenu}
-                  className="block rounded-md px-3 py-3 text-muted transition-colors hover:bg-surface-2 hover:text-ink"
+                  className="block rounded-lg px-3 py-3 text-muted transition-colors hover:bg-surface-2 hover:text-ink"
                 >
                   {link.label}
                 </a>
