@@ -24,7 +24,7 @@ function Navbar() {
   const closeMenu = () => setIsOpen(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line/60 bg-canvas/80 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 border-b border-line/60 bg-canvas/80 backdrop-blur-md">
       <nav aria-label="Main" className="mx-auto max-w-6xl px-6">
         <div className="flex h-16 items-center justify-between">
           <a
@@ -45,7 +45,7 @@ function Navbar() {
               <li key={link.id}>
                 <a
                   href={`#${link.id}`}
-                  className="rounded-lg px-3 py-2 text-sm text-muted transition-colors hover:text-ink"
+                  className="rounded-md px-3 py-2 text-sm text-muted transition-colors hover:text-ink"
                 >
                   {link.label}
                 </a>
@@ -61,7 +61,7 @@ function Navbar() {
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             aria-label={isOpen ? 'Close menu' : 'Open menu'}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-ink transition-colors hover:bg-surface-2 lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md text-ink transition-colors hover:bg-surface-2 lg:hidden"
           >
             {isOpen ? <X aria-hidden="true" size={22} /> : <Menu aria-hidden="true" size={22} />}
           </button>
@@ -75,7 +75,7 @@ function Navbar() {
                 <a
                   href={`#${link.id}`}
                   onClick={closeMenu}
-                  className="block rounded-lg px-3 py-3 text-muted transition-colors hover:bg-surface-2 hover:text-ink"
+                  className="block rounded-md px-3 py-3 text-muted transition-colors hover:bg-surface-2 hover:text-ink"
                 >
                   {link.label}
                 </a>
