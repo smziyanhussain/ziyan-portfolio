@@ -17,6 +17,20 @@
   --color-accent-2: #9b7bff;        /* purple */
   --color-status-progress: #f5b544; /* "In Progress" badge */
   --color-status-done: #4ade80;     /* "Completed" badge */
+  
+  /* Animations */
+  --animate-fade-up: fade-up 0.6s ease-out both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 /* ---------- Base page styles ---------- */
