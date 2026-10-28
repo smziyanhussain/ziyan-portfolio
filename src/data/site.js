@@ -34,6 +34,6 @@ export const navLinks = [
 
 export const socialLinks = {
   github: 'https://github.com/smziyanhussain',
-  linkedin: 'https://www.linkedin.com/in/syed-muhammad-ziyan-hussain',
+  linkedin: 'https://www.linkedin.com/in/syed-muhammad-ziyan-hussain-0768332a7',
   email: 'smziyanhussain@gmail.com',
 }

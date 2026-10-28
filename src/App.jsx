@@ -1,20 +1,13 @@
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
-import Section from './components/Section.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
+import Projects from './components/Projects.jsx'
 import Experience from './components/Experience.jsx'
 import Education from './components/Education.jsx'
-
-// Temporary placeholder for sections built in Phases 7-8
-function Placeholder({ id, title }) {
-  return (
-    <Section id={id} eyebrow={`// ${id}`} title={title}>
-      <p className="text-muted">Content coming in a later phase.</p>
-    </Section>
-  )
-}
+import GitHub from './components/GitHub.jsx'
+import Contact from './components/Contact.jsx'
 
 function App() {
   return (
@@ -32,11 +25,11 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <Placeholder id="projects" title="Featured Projects" />
+        <Projects />
         <Experience />
         <Education />
-        <Placeholder id="github" title="GitHub" />
-        <Placeholder id="contact" title="Contact" />
+        <GitHub />
+        <Contact />
       </main>
 
       <Footer />
