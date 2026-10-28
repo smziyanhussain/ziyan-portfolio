@@ -5,6 +5,7 @@ export const profile = {
   name: 'SYED MUHAMMAD ZIYAN HUSSAIN',
   shortName: 'ZIYAN HUSSAIN',
   role: 'AI Engineer',
+  headline: 'AI Engineer · LLM & Computer Vision',
   location: 'Karachi, Pakistan',
   intro:
     'Computer Engineering graduate building practical AI systems, from real-time computer vision on edge devices to agentic LLM workflows that automate business tasks.',

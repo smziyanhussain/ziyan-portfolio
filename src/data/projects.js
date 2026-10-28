@@ -95,4 +95,15 @@ export const otherProjects = [
       'Android app with OTP-based user verification using Firebase Authentication, plus registration, verification, and home screens with error handling.',
     tech: ['Java', 'XML', 'Android Studio', 'Firebase'],
   },
+    {
+    id: 'dialogflow-realtime-chat',
+    title: 'Real-time Dialogflow Chat',
+    period: '',
+    summary:
+      'Real-time chat app built as an evaluation test: an HTML/JavaScript chat page sends messages over WebSocket to a Python server, which gets replies from a Google Dialogflow ES agent.',
+    tech: ['Python', 'WebSockets', 'Dialogflow ES', 'HTML', 'CSS', 'JavaScript'],
+    links: {
+      repo: 'https://github.com/smziyanhussain/Evaluation-Test-4-Real-time-dialogflow-chat',
+    },
+  },
 ]
