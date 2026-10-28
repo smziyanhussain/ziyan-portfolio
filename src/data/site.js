@@ -2,8 +2,8 @@
 // Edit here, and every component that uses these values updates automatically.
 
 export const profile = {
-  name: 'SYED MUHAMMAD ZIYAN HUSSAIN',
-  shortName: 'ZIYAN HUSSAIN',
+  name: 'Syed Muhammad Ziyan Hussain',
+  shortName: 'Ziyan Hussain',
   role: 'AI Engineer',
   headline: 'AI Engineer · LLM & Computer Vision',
   location: 'Karachi, Pakistan',
